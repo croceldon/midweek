@@ -1,0 +1,15 @@
+- title 'Users'
+
+.row.header-users
+  h1.col-xs-12.col-sm-6 Users
+  .col-xs-12.col-sm-6.top25.text-right
+    = link_to 'New User', new_user_path,
+      class: 'btn btn-primary btn-new-user', remote: true
+
+table.table.table-hover.table-users
+  thead
+    tr
+      th Email
+      th
+  tbody
+    = render @users

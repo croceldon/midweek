@@ -1,0 +1,7 @@
+tr.user-row id="user_#{user.id}"
+  td
+    = link_to user.email, edit_user_path(user),
+        class: 'btn btn-link btn-edit-user', remote: true
+  td
+    = link_to 'Delete', user, method: :delete, class: 'btn btn-danger',
+      remote: true, data: { confirm: 'Are you sure?' }

@@ -1,0 +1,5 @@
+= simple_form_for @user, remote: true, html: { class: 'bottom15 top15' } do |f|
+
+  = f.input :email
+  => f.submit 'Save', class: 'btn btn-primary'
+  = link_to 'Cancel', '', class: 'btn btn-link btn-cancel'
